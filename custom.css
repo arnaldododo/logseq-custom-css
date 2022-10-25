@@ -1,0 +1,31 @@
+:root {
+    --ls-font-family: -apple-system, BlinkMacSystemFont, "Noto Sans Arabic", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+.dark-theme,
+html[data-theme=dark] {
+    --ls-block-properties-background-color: #103643;
+}
+
+.white-theme,
+html[data-theme=light] {
+    --ls-block-properties-background-color: #f5f5f5;
+    --ls-cloze-text-color: var(--ls-link-ref-text-color);
+}
+
+.content div[data-refs-self*='"card"'] {
+    box-shadow: unset;
+}
+
+.content div[data-refs-self*='"card"'] .block-children-container {
+    background: var(--ls-block-properties-background-color);
+    padding: 0.3em 0
+}
+
+.content div[data-refs-self*='"card"'] .block-children-left-border {
+    background-color: unset
+}
+
+.content div[data-refs-self*='"card"'] .block-children {
+    margin-bottom: 2px
+}
